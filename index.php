@@ -2,10 +2,7 @@
 require "vendor/autoload.php";
 ini_set('memory_limit', '-1');
 
-/* Provider pattern
-    Pass "Guzzle" or "Curl" into WeatherProvider::create to use either methods
-*/
-$weather = WeatherProvider::create("Guzzle");
+$weather = new GuzzleWeather();
 $egyption_cities = $weather->get_cities();
 
 if (isset($_POST["submit"])) {
