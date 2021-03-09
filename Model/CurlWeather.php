@@ -12,7 +12,6 @@ class CurlWeather implements Weather_Interface {
     }
 
     public function get_weather($cityid) {
-        //$url2 = "http://api.openweathermap.org/data/2.5/weather?id=" .$cityid."&lang=en&units=metric&APPID=7d938c2e126554bcd611e9d95495e0ad";
         $url = str_replace("{{cityid}}", $cityid, __WEATHER_URL);
 
         $ch = curl_init($url);
