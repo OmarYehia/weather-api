@@ -1,0 +1,10 @@
+{
+    "require": {
+        "twilio/sdk": "^5.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "classmap": ["Model/"],
+        "files": ["config.php"]
+    }
+}

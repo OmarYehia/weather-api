@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("25-252081_weather-background.jpg");
+    height: 70vh;
+}
+
+.weather-info,
+.message-result {
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px ;
+    width: 50%;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 10px;
+}
