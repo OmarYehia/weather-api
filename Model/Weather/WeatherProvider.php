@@ -1,4 +1,5 @@
 <?php
+namespace Model\Weather;
 
 abstract class WeatherProvider implements Weather_Interface {
     public function get_cities() {

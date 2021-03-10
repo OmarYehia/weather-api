@@ -1,7 +1,9 @@
 <?php
+namespace Model\SMS;
+
 use Twilio\Rest\Client;
 
-class SMS {
+class SMS implements SMS_interface{
     private $account_sid = __TWILIO_ACCOUNT_SID;
     private $auth_token = __TWILIO_AUTH_TOKEN;
     private $twilio_number = __TWILIO_MY_PHONE_NUMBER;

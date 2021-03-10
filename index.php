@@ -2,6 +2,8 @@
 require "vendor/autoload.php";
 ini_set('memory_limit', '-1');
 
+use Model\Weather\GuzzleWeather;
+
 $weather = new GuzzleWeather();
 $egyption_cities = $weather->get_cities();
 

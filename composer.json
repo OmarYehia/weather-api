@@ -4,7 +4,9 @@
         "guzzlehttp/guzzle": "^7.0"
     },
     "autoload": {
-        "classmap": ["Model/"],
+        "psr-4": {
+            "Model\\": "Model/"
+        },
         "files": ["config.php"]
     }
 }

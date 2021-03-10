@@ -1,4 +1,6 @@
 <?php
+namespace Model\Weather;
+
 interface Weather_Interface {
     public function get_cities();
     public function get_weather($cityid);

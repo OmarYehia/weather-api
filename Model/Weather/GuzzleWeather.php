@@ -1,4 +1,5 @@
 <?php
+namespace Model\Weather;
 
 use \GuzzleHttp\Client;
 
